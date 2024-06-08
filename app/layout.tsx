@@ -6,6 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Scroll Emojies",
+  description: "Playing with CSS Animation Timeline",
 };
 
 export default function RootLayout({
