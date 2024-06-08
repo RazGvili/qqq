@@ -20,12 +20,9 @@
 }
 
 .support {
-  display: flex;
-  flex-direction: column;
-  justify-items: center;
-  align-items: center;
+  display: grid;
+  place-items: center;
   gap: 2rem;
-  position: fixed;
 }
 
 @supports (animation-timeline: view()) {
