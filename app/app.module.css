@@ -11,22 +11,16 @@
   }
 }
 
-@keyframes pulse {
-  0%,
-  100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.5;
-  }
-}
-
 .card {
   height: 30dvh;
   width: 30dvh;
   border-radius: 16px;
   background-color: gray;
-  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  display: none;
+}
+
+.support {
+  display: none;
 }
 
 @supports (animation-timeline: view()) {
@@ -36,5 +30,15 @@
     animation-timeline: view();
     animation-range-start: entry 0;
     animation-range-end: cover 40%;
+    display: block;
+  }
+
+  .support {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    gap: 2rem;
+    position: fixed;
   }
 }
