@@ -2,7 +2,7 @@ import style from "./app.module.css";
 
 // generate random emojy
 const RandomEmoji = () => {
-  const emojis = ["👋", "👍", "👏", "🤝", "🙌", "🚀", "🌟", "🎉", "🔥"];
+  const emojis = ["👋", "👍", "👏", "🤝", "🙌", "🌟", "🎉", "🇮🇱❤️"];
   return (
     <div className="h-full w-full text-9xl grid place-items-center">
       {emojis[Math.floor(Math.random() * emojis.length)]}
